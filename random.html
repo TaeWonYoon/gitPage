@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 100%;
+    }
+</style>
+<body>
+    <br><br>
+    <div style="text-align: center;">
+        <button type="button" style="width:90px;height:40px;background: aqua;cursor: pointer;"onclick="randomName()">클릭</button>
+    </div>
+
+    <div style="text-align: center;">
+        <h3>누가 당첨될까?</h3>
+        <h2 id="name"></h2>
+    </div>
+
+
+
+    <script>
+        function randomName() {
+            let arr = ['김지연','김현정','김지연','김현정','윤상일','윤태원','윤빛나','윤정현','정유안','김지연','김현정','윤상일','윤빛나','윤정현','정유안'];
+            document.getElementById('name').innerHTML = arr[Math.floor(Math.random() * arr.length)];
+        }
+    </script>
+</body>
+</html>
