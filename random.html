@@ -18,7 +18,7 @@
     <div style="text-align: center;">
         <h3>누가 당첨될까?</h3>
         <h2 id="name"></h2>
-        <h3 id="nameTwo"></h3>
+        <h3 id="nameTwo" style="color:red;"></h3>
     </div>
     <hr />
     <br><br><br>
@@ -29,12 +29,14 @@
 
     <script>
         function randomName() {
-            let arr = ['김지연','김지연','김지연','김현정','김지연','김현정','굥상일','윤태원','윤빛나','윤정현','정유안','김지연','김현정','굥상일','윤빛나','윤정현','정유안'];
+            let arr = ['김지연','김지연','김지연','김현정','김지연','김현정','굥상일','윤태원','굥빛나','에이스윤정현','정유안','김지연','김현정','굥상일','굥빛나','에이스윤정현','정유안'];
             let arrVal = arr[Math.floor(Math.random() * arr.length)];
             if(arrVal == "김지연") {
                 document.getElementById('nameTwo').innerHTML = "아싸 개좋아";
-            } else {
+            } else if(arrVal == "윤태원") {
                 document.getElementById('nameTwo').innerHTML = "슬프다 ㅠㅠ";
+            } else {
+                document.getElementById('nameTwo').innerHTML = "알콜 중독자들..";
             }
             document.getElementById('name').innerHTML = arrVal;
         }
