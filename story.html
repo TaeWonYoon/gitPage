@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+      width: 100%;
+    }
+</style>
+<body>
+    <div style="text-align: center;">
+        <h1 id="jiyeon" style="color:red;">지연아</h1>
+    </div>
+
+    <script>
+        var a = document.getElementById('jiyeon');
+        var kVal = {
+            "0" : "생일축하해"
+        ,   "1" : "선물이야 "
+        ,   "2" : "충분하지?"
+        ,   "3" : "술은너가사"
+        ,   "4" : "1차~"
+        ,   "5" : "2차~"
+        ,   "6" : "끝까지 사야해"
+        ,   "7" : "좀 착하네 지연"
+        ,   "8" : "끝~~~~고생했어"
+        ,   "9" : "창 닫아!"
+        }
+        window.onload = function() {
+
+            
+            setTimeout(function() {
+                a.innerHTML = kVal[0];
+                setTimeout(function() {
+                    a.innerHTML = kVal[1];
+                    setTimeout(function() {
+                        a.innerHTML = kVal[2];
+                        setTimeout(function() {
+                            a.innerHTML = kVal[3];
+                            setTimeout(function() {
+                                a.innerHTML = kVal[4];
+                                setTimeout(function() {
+                                    a.innerHTML = kVal[5];
+                                    setTimeout(function() {
+                                        a.innerHTML = kVal[6];
+                                        setTimeout(function() {
+                                            a.innerHTML = kVal[7];
+                                            setTimeout(function() {
+                                                a.innerHTML = kVal[8];
+                                                setTimeout(function() {
+                                                    a.innerHTML = kVal[9];
+                                                }, 800)
+                                            }, 800)
+                                        }, 800)
+                                    }, 800)
+                                }, 800)
+                            }, 800)
+                        }, 800)    
+
+                    }, 800)
+
+                }, 800)
+                
+            }, 800)
+            
+            
+
+           
+        }
+        
+    </script>
+</body>
+</html>
