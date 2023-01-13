@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          width: 100%;
+          background: rgb(245, 209, 215);
+        }
+      </style>
+</head>
+<body>
+    <br><br>
+    <div style="text-align: center; ">
+           <img src="" alt="" id="imgDiv">
+    </div>
+    <br><br>
+    <div style="text-align: center;">
+        <h3 id="txtDiv" style="color:rgb(199, 144, 72)">****</h3>
+    </div>
+
+<script>
+
+    window.onload = function() {
+        console.log("Start")
+        setTimeFnc("우리 지연이는요.",500, "./img/1.jpg");
+        
+        setTimeFnc("서울을 떠났어요",2500, "./img/a.png");
+
+        setTimeFnc("그리고 시골소녀가 되었어요",4500, "./img/a.jpg");
+
+        setTimeFnc("시골소녀가 된 후 화가 많이 늘었어요",6500, "./img/1.jpg");
+
+        setTimeFnc("시골에서 좋아하는 커피도 못마시고 있어요",8500, "./img/3.jpg");
+
+        setTimeFnc("그래서 소주를 이만큼이나 먹었어요",1000, "./img/2.jpg");
+
+        setTimeFnc("대단하다고 생각해요. ",12500, "./img/4.jpg");
+
+        setTimeFnc("또 청주가서 남자친구가 생겼어요 ",14500, "./img/5.jpg");
+
+        setTimeFnc("남친 생기려고 갔나봐요 ㅎㅎ",16500, "./img/5.jpg");
+
+        setTimeFnc("다이어트하자 친구야 ",18500, "./img/6.jpg");
+
+        setTimeFnc("응원할게 ", 20500, "./img/7.jpg");
+    }
+
+    function setTimeFnc(str, time, src) {
+        setTimeout(function() {
+            let txtDiv = document.getElementById('txtDiv');
+            txtDiv.innerHTML = str;
+            let imgDiv = document.getElementById('imgDiv');
+            imgDiv.src = src;
+        }, time);
+    }
+    
+</script>
+</body>
+</html>
