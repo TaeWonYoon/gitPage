@@ -51,10 +51,10 @@
 
     function setTimeFnc(str, time, src) {
         setTimeout(function() {
-            let txtDiv = document.getElementById('txtDiv');
-            txtDiv.innerHTML = str;
             let imgDiv = document.getElementById('imgDiv');
             imgDiv.src = src;
+            let txtDiv = document.getElementById('txtDiv');
+            txtDiv.innerHTML = str;   
         }, time);
     }
     
